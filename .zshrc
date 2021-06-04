@@ -18,7 +18,9 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 # map caps to escape
-setxkbmap -option caps:escape
+if [ command -v setxkbmap ]; then
+    setxkbmap -option caps:escape
+fi
 
 
 # Set list of themes to pick from when loading at random
@@ -103,8 +105,8 @@ alias gl='git branch -l'
 alias gt='git tag -l'
 
 export TI_USE_UNIFIED_MEMORY=0
-source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.zsh
+[ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+[ -f ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.zsh ] && source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.zsh
 
 # User configuration
 
@@ -132,10 +134,12 @@ source ~/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source ~/.config/mycli/init.sh
-source $HOME/.cargo/env
-alias ls='lsd'
-alias ll='lsd -l'
-alias la='lsd -la'
+[ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
+if [ command -v lsd ];then
+    alias ls='lsd'
+    alias ll='lsd -l'
+    alias la='lsd -la'
+fi
 #tmux
 #
 case `uname -s` in
