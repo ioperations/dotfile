@@ -18,7 +18,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 # map caps to escape
-if [ command -v setxkbmap ]; then
+if  command -v setxkbmap ; then
     setxkbmap -option caps:escape
 fi
 
@@ -135,7 +135,7 @@ export TI_USE_UNIFIED_MEMORY=0
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source ~/.config/mycli/init.sh
 [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
-if [ command -v lsd ];then
+if command -v lsd ;then
     alias ls='lsd'
     alias ll='lsd -l'
     alias la='lsd -la'
