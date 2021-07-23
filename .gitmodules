@@ -1,3 +1,9 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ioperations/ohmyzsh
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/ioperations/nvim
+[submodule ".config/fcitx"]
+	path = .config/fcitx
+	url = https://github.com/ioperations/fcitx
