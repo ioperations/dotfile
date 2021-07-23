@@ -6,7 +6,7 @@ ccwhite="\033[0;37m"
 
 curdir=$(cd `dirname $0` && pwd )
 
-sudo apt install -y hsetroot xsettingsd compton rofi mpc mpv alsa-utils rofi i3-wm  xrandr fcitx dunst -y
+sudo apt install -y hsetroot xsettingsd compton rofi mpc mpv alsa-utils rofi i3-wm  xrandr fcitx dunst  picom -y
 
 if command -v cargo ;then
     /usr/bin/true
