@@ -1,7 +1,7 @@
-# my i3 , rofi , nvim , fcitx configuration
+# :💯 my i3 , rofi , nvim , fcitx configuration
 
 ## i3
-<img align="right" src="./demo/desktop.png" alt="i3">
+<img align="center" src="./demo/desktop.png" alt="i3">
 
 ## rofi
 <img align="center" src="./demo/rofi.png" alt="rofi">
