@@ -1,0 +1,35 @@
+[user]
+	email = ioperations.c@gmail.com
+	name = aodong.qin
+[color]
+	ui = auto
+; [http]
+	; proxy = http://127.0.0.1:7890
+; [https]
+	; proxy = http://127.0.0.1:7890
+[init]
+	defaultBranch = master
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+
+
+[diff]
+	context = 33
+[gui]
+	encoding = EUC-JP
