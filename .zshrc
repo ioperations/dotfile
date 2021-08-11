@@ -18,7 +18,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 # map caps to escape
-if  command -v setxkbmap ; then
+if command -v setxkbmap >> /dev/null 2>&1 ; then
     setxkbmap -option caps:escape
 fi
 
@@ -99,8 +99,11 @@ alias emacs='emacs -nw'
 alias c='ccat'
 alias sl='sl -e' ##allow interupt
 alias tmux='tmux -u' ##allow interupt
+alias ga='git add .'
 alias gc='git clone --depth 1 '
 alias gs='git status'
+alias gd='git diff'
+alias gp='git push'
 alias gl='git branch -l'
 alias gt='git tag -l'
 
@@ -135,7 +138,7 @@ export TI_USE_UNIFIED_MEMORY=0
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source ~/.config/mycli/init.sh
 [ -f $HOME/.cargo/env ] && source $HOME/.cargo/env
-if command -v lsd ;then
+if command -v lsd >/dev/null 2>&1 ;then
     alias ls='lsd'
     alias ll='lsd -l'
     alias la='lsd -la'
