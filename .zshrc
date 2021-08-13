@@ -172,4 +172,5 @@ unset __conda_setup
 export ANDROID_NDK_HOME=$HOME/android-ndk/android-ndk-r21e/
 export PATH=$PATH:$ANDROID_NDK_HOME
 
+[ -d ~/.ghcup/bin ] && export PATH=$PATH:~/.ghcup/bin/
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
