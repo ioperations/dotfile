@@ -3,10 +3,10 @@
 	name = aodong.qin
 [color]
 	ui = auto
-; [http]
-	; proxy = http://127.0.0.1:7890
-; [https]
-	; proxy = http://127.0.0.1:7890
+[http]
+    proxy = http://127.0.0.1:7890
+[https]
+    proxy = http://127.0.0.1:7890
 [init]
 	defaultBranch = master
 
@@ -33,3 +33,5 @@
 	context = 33
 [gui]
 	encoding = EUC-JP
+[core]
+	quotepath = off
