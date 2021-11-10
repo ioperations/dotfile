@@ -1,0 +1,1041 @@
+
+# 2021-11-08 19:57:30.731777
++show databases;
+
+# 2021-11-08 19:57:36.921867
++use alterationdet;
+
+# 2021-11-08 19:57:39.314281
++show tables;
+
+# 2021-11-08 19:57:50.689708
++select * from alter_ann_normal;
+
+# 2021-11-08 19:58:17.593405
++describe alter_ann_normal;
+
+# 2021-11-08 19:59:08.872875
++select * from alter_info_normal;
+
+# 2021-11-08 19:59:30.440617
++select * from alter_info_normal limit 3;
+
+# 2021-11-08 19:59:38.736867
++select * from alter_info_normal ;
+
+# 2021-11-08 19:59:46.816524
++select * from alter_info_normal limit 4 ;
+
+# 2021-11-08 20:00:10.656044
++select * from alter_information_normal limit 4;
+
+# 2021-11-08 20:00:19.735957
++select count(*) from alter_information_normal 
+
+# 2021-11-08 20:03:17.007382
++show databases;
+
+# 2021-11-08 20:08:20.802352
++use alterationdet;
+
+# 2021-11-08 20:08:24.010212
++show tables
+
+# 2021-11-08 20:08:38.650039
++describe alter_announcement_normal
+
+# 2021-11-08 20:08:58.873834
++describe alter_version;
+
+# 2021-11-08 20:09:12.905736
++select * freom alter_version
+
+# 2021-11-08 20:09:15.761611
++select * from alter_version
+
+# 2021-11-09 08:57:17.025845
++show databases;
+
+# 2021-11-09 08:57:18.912183
++show tables
+
+# 2021-11-09 08:57:26.696522
++use alterationdet;
+
+# 2021-11-09 08:57:30.216260
++show tables
+
+# 2021-11-09 08:57:39.976369
++describe alter_announcement_normal
+
+# 2021-11-09 08:58:50.984908
++select * from alter_announcement_normal limit 1
+
+# 2021-11-09 10:09:56.151227
++show tables;
+
+# 2021-11-09 10:10:01.239937
++use alterationdet;
+
+# 2021-11-09 10:10:03.363561
++show tables;
+
+# 2021-11-09 10:10:18.580273
++select * from alter_info_type;
+
+# 2021-11-09 10:11:06.426818
++describe alter_info_type
+
+# 2021-11-09 10:12:05.762306
++select * from alter_info_type limit 1;
+
+# 2021-11-09 10:12:08.673952
++select * from alter_info_type limit 5;
+
+# 2021-11-09 10:43:55.382406
++use alterationdet;
+
+# 2021-11-09 10:43:59.243857
++select * from alter_info_type limit 5;
+
+# 2021-11-09 10:44:11.780354
++show tables;
+
+# 2021-11-09 10:44:24.452078
++select * from alter_data_type limit 4
+
+# 2021-11-09 10:44:38.595608
++select * from alter_data_type 
+
+# 2021-11-09 11:04:28.269064
++select * from alter_ann_type;
+
+# 2021-11-09 11:06:56.684009
++select * from alter_data_type 
+
+# 2021-11-09 11:11:07.201841
++select * from alter_ann_type;
+
+# 2021-11-09 11:12:23.920653
++select * from alter_data_type 
+
+# 2021-11-09 11:13:30.455064
++show tables;
+
+# 2021-11-09 11:14:03.735224
++select * from alter_data_type 
+
+# 2021-11-09 11:14:12.454464
++select * from alter_info_type
+
+# 2021-11-09 11:18:38.531433
++select * from alter_data_type
+
+# 2021-11-09 11:27:34.912486
++use alterationdet;
+
+# 2021-11-09 11:27:36.848025
++show tables;
+
+# 2021-11-09 11:27:39.249197
++select * from alter_data_type
+
+# 2021-11-09 11:27:47.436065
++describe alter_data_type
+
+# 2021-11-09 20:58:52.283261
++show databases;
+
+# 2021-11-09 20:58:54.786596
++use alterationdet;
+
+# 2021-11-09 20:59:08.666085
++create table test(id int , hiredata data);
+
+# 2021-11-09 20:59:29.242155
++create table test(id int ,hiredata date);
+
+# 2021-11-09 20:59:56.569958
++insert into test values(1,'20151208000000');
+
+# 2021-11-09 21:00:10.769907
++insert into test values(1,'20151208104400');
+
+# 2021-11-09 21:00:17.377544
++select * from test
+
+# 2021-11-10 22:10:03.929381
++use alterationdet;
+
+# 2021-11-10 22:10:05.883071
++show databases;
+
+# 2021-11-10 22:10:08.403139
++show tables;
+
+# 2021-11-10 22:10:11.058939
++select * from test
+
+# 2021-11-10 22:11:22.186931
++select * from alter_ann_normal
+
+# 2021-11-10 22:11:26.395128
++select * from alter_ann_normal limit 4;
+
+# 2021-11-10 22:11:40.675034
++describe alter_ann_normal
+
+# 2021-11-10 22:11:54.795090
++select id from alter_ann_normal ;
+
+# 2021-11-10 22:11:59.227555
++select id from alter_ann_normal limit 4;
+
+# 2021-11-10 22:12:19.867570
++select *  from alter_ann_normal where id == 4226472;
+
+# 2021-11-10 22:12:28.787191
++select *  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:12:45.595150
++select secu_code  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:12:52.035503
++select secu_code,brief  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:13:05.547004
++select secu_code,brief,context,bussiunion,database  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:13:13.570900
++select secu_code,brief,context,bussiunion,data_source  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:13:33.187074
++select secu_code,freepids,htmlurl,imgs  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:14:05.418893
++select secu_code,tag  from alter_ann_normal where id=4226472;
+
+# 2021-11-10 22:14:12.914825
++select secu_code,tag,bussiunion  from alter_ann_normal where id=4226472;
+
+# 2021-11-11 08:48:40.533963
++create table test(id int KEY,hiredata date, PRIMARY KEY id);
+
+# 2021-11-11 08:48:48.245587
++create table tt(id int KEY,hiredata date, PRIMARY KEY id);
+
+# 2021-11-11 08:48:53.373809
++create table tt(id int KEY,hiredata date, PRIMARY KEY (id));
+
+# 2021-11-11 08:49:03.454997
++create table tt(id int KEY,hiredata date, id PRIMARY KEY);
+
+# 2021-11-11 08:49:45.333897
++create table tt(id int PRIMARY KEY AUTO_INCREMENT ,hiredata date,);
+
+# 2021-11-11 08:49:48.893404
++create table tt(id int PRIMARY KEY AUTO_INCREMENT ,hiredata date);
+
+# 2021-11-11 08:49:55.701984
++describe tt
+
+# 2021-11-11 08:50:10.125774
++select * from tt \G
+
+# 2021-11-11 08:50:13.229796
++select * from tt\G
+
+# 2021-11-11 08:50:16.373111
++select * from tt\G;
+
+# 2021-11-11 08:50:19.005289
++select * from tt\g;
+
+# 2021-11-11 08:51:04.749563
++alter table tt drop primary key
+
+# 2021-11-11 08:51:11.045786
++alter table tt drop primary key id;
+
+# 2021-11-11 08:52:24.765988
++alter table tt add constraint contacts_pk primary key (id , hiredata )
+
+# 2021-11-11 08:52:31.109527
++alter table tt drop primary key
+
+# 2021-11-11 08:52:36.429910
++drop tt
+
+# 2021-11-11 08:52:45.285526
++show tt;
+
+# 2021-11-11 08:52:50.621686
++describe tt;
+
+# 2021-11-11 09:00:38.245894
++show tables
+
+# 2021-11-11 09:00:42.965310
++drop tt;
+
+# 2021-11-11 09:01:12.901252
++drop table tt;
+
+# 2021-11-11 09:01:29.693911
++create table tt(id int KEY AUTO_INCREMENT ,hiredata date);
+
+# 2021-11-11 09:01:34.693658
++describe tt;
+
+# 2021-11-11 09:01:41.405678
++select * from tt\g;
+
+# 2021-11-11 09:01:43.717140
++select * from tt\G
+
+# 2021-11-11 09:02:00.510862
++insert into tt ( 1 , "aodong")
+
+# 2021-11-11 09:02:09.765501
++insert into tt values( 1 ,"aodong")
+
+# 2021-11-11 09:02:21.814187
++describe tt
+
+# 2021-11-11 09:02:34.365603
++insert into tt values( 1 ,"2020-01-21")
+
+# 2021-11-11 09:02:37.901745
++show tables
+
+# 2021-11-11 09:02:40.494925
++select * from tt\G
+
+# 2021-11-11 09:02:44.261619
++select * from tt
+
+# 2021-11-11 09:02:46.525459
++select * from tt\G
+
+# 2021-11-11 09:03:22.645934
++explain select * from tt\G
+
+# 2021-11-11 09:03:36.932530
++explain select * from tt where id =0 \G
+
+# 2021-11-11 09:03:56.869764
++alter table tt drop primary key
+
+# 2021-11-11 09:04:11.037744
++alter table tt add primary key 
+
+# 2021-11-11 09:04:17.005723
++alter table tt add primary key  id
+
+# 2021-11-11 09:04:43.373719
++alter table tt add primary key  (id)
+
+# 2021-11-11 09:04:52.949636
++alter table tt drop primary key  (id)
+
+# 2021-11-11 09:05:30.509357
++alter table tt modify column id INT(10) UNSIGNED primary KEY auto_increment
+
+# 2021-11-11 09:05:45.997772
++alter table tt modify column id INT(10) UNSIGNED  auto_increment
+
+# 2021-11-11 09:05:50.865783
++describe tt
+
+# 2021-11-11 09:06:40.797940
++alter table tt add hobby varchar(100);
+
+# 2021-11-11 09:06:46.433939
++select * from tt\G
+
+# 2021-11-11 09:06:48.998163
++select * from tt
+
+# 2021-11-11 09:08:28.878917
++update tt set hobby = " 打篮球" where id = 0 ;
+
+# 2021-11-11 09:08:31.037573
++select * from tt
+
+# 2021-11-11 09:09:06.069679
++describe tt
+
+# 2021-11-11 09:09:13.645602
++select * from tt
+
+# 2021-11-11 09:09:20.013253
++update tt set hobby = " 打篮球" where id = 1 ;
+
+# 2021-11-11 09:09:22.101405
++show tables
+
+# 2021-11-11 09:09:24.965298
++select * from tt
+
+# 2021-11-11 09:10:27.045746
++update tt set hobby = " 打篮球" where id = 1 ;
+
+# 2021-11-11 09:10:34.517651
++alter table tt add hobby varchar(100);
+
+# 2021-11-11 09:11:13.725596
++drop table tt;
+
+# 2021-11-11 09:11:31.805473
++create table hellotest from alter_ann_normal
+
+# 2021-11-11 09:14:23.725414
++create table hellotest as ( select * from test);
+
+# 2021-11-11 09:15:39.990580
++set @@GLOBAL>ENFORCE_GTID_CONSISTENCY =off 
+
+# 2021-11-11 09:15:46.701743
++set @@GLOBAL_ENFORCE_GTID_CONSISTENCY =off 
+
+# 2021-11-11 09:16:49.621680
++create table hellotest like table alter_ann_normal;
+
+# 2021-11-11 09:16:56.213850
++create table hellotest like  alter_ann_normal;
+
+# 2021-11-11 09:17:11.437963
++insert into hellotest select * from alter_ann_normal;
+
+# 2021-11-11 09:19:26.469933
++select count(*) from hellotest;
+
+# 2021-11-11 09:20:13.487257
++describe hellotest
+
+# 2021-11-11 09:28:53.398437
++select  id from hellotest  limit 4;
+
+# 2021-11-11 09:29:03.294017
++select  id from hellotest  id = 4336472;
+
+# 2021-11-11 09:29:09.558704
++select  id from hellotest  where id = 4336472;
+
+# 2021-11-11 09:29:25.877439
++select  id from hellotest  where id=4336472;
+
+# 2021-11-11 09:29:32.998276
++select   * from hellotest  where id=4336472;
+
+# 2021-11-11 09:30:12.447115
++show tables;
+
+# 2021-11-11 09:30:19.397980
++select   * test;
+
+# 2021-11-11 09:30:26.619950
++select * from hellotest ;
+
+# 2021-11-11 09:37:05.177607
++use alterationdet;
+
+# 2021-11-11 09:37:09.753306
++#nh
+
+# 2021-11-11 09:37:20.705241
++transaction 
+
+# 2021-11-11 09:37:26.065320
++desc transaction 
+
+# 2021-11-11 09:37:50.176912
++show full processlist;
+
+# 2021-11-11 09:39:10.489302
++select TABLE_NAME, ENGINE from infomation_schema.TABLES ;
+
+# 2021-11-11 09:39:46.897244
++show create table hwll
+
+# 2021-11-11 09:39:53.017037
++show create table hellotest;
+
+# 2021-11-11 09:40:21.457172
++show create table hellotest\G
+
+# 2021-11-11 09:43:01.033371
++show full processlist;
+
+# 2021-11-11 09:56:56.772586
++use alterationdet;
+
+# 2021-11-11 09:57:00.873996
++select TABLE_NAME, ENGINE from infomation_schema.TABLES ;
+
+# 2021-11-11 09:57:08.145483
++select * from hellotest limit 500;
+
+# 2021-11-11 09:57:30.498043
++select 100+1
+
+# 2021-11-11 09:57:44.841143
++select 100*100;
+
+# 2021-11-11 09:57:52.697224
++select 100*0.1
+
+# 2021-11-11 09:58:08.049927
++select * from hellotest limit 500;
+
+# 2021-11-11 09:58:26.905417
++select 0.239/500;
+
+# 2021-11-11 09:58:33.673629
++select 0.239/500 * 5000000;
+
+# 2021-11-11 09:58:45.065886
++select 0.239/500 * 5000000/ 60;
+
+# 2021-11-11 09:59:02.033139
++select count(*) from alter_ann_normal;
+
+# 2021-11-11 09:59:07.393131
++select count(*) from alter_data_type;
+
+# 2021-11-11 09:59:15.001516
++select count(*) from alter_announcement_normal
+
+# 2021-11-11 09:59:16.058978
++;
+
+# 2021-11-11 09:59:20.401338
++select count(*) from alter_info_type
+
+# 2021-11-11 09:59:23.573539
++select count(*) from alter_ann_ut_normal
+
+# 2021-11-11 09:59:27.913654
++select count(*) from alter_version
+
+# 2021-11-11 09:59:32.905276
++select count(*) from theme_limit_up_normal;
+
+# 2021-11-11 09:59:53.385113
++show create table alter_ann_type;
+
+# 2021-11-11 10:00:23.025419
++create table z like alter_ann_typ
+
+# 2021-11-11 10:00:24.009183
++create table z like alter_ann_type
+
+# 2021-11-11 10:00:44.609194
++insert into z as select * from alter_ann_type
+
+# 2021-11-11 10:00:54.913437
++insert into z as (select * from alter_ann_type);
+
+# 2021-11-11 10:02:07.425835
++insert into z as select * from alter_ann_type
+
+# 2021-11-11 10:12:44.865992
++insert into z  select * from alter_ann_type
+
+# 2021-11-11 10:13:03.362264
++show create table z
+
+# 2021-11-11 10:31:00.540062
++送往
+
+# 2021-11-11 10:31:05.028323
++show tables;
+
+# 2021-11-11 10:34:18.858900
++create table students (id int PRIMARY KEY AUTO_INCREMENT , first_name varchar(100),last_name varchar(100),hobby varchar(400), graduated_university varchar(100), job varchar(100) , married int , birthday date, img varchar(200) );
+
+# 2021-11-11 10:34:26.898899
++show create table students;
+
+# 2021-11-11 10:35:40.716012
++insert into students values("aodong","qin","computers","Jinan University","c++ backend",0,"1998-11-15","");
+
+# 2021-11-11 10:35:46.690839
++insert into students values(1,"aodong","qin","computers","Jinan University","c++ backend",0,"1998-11-15","");
+
+# 2021-11-11 10:35:54.539077
++select * from students;
+
+# 2021-11-11 10:40:06.845390
++show databases;
+
+# 2021-11-11 10:47:55.083853
++use alterationdet;
+
+# 2021-11-11 10:47:56.707857
++select * from students;
+
+# 2021-11-11 10:53:18.076329
++describe s
+
+# 2021-11-11 10:53:20.987863
++describe students
+
+# 2021-11-11 10:55:17.212699
++alter table students drop column hobby
+
+# 2021-11-11 10:55:24.316354
++select * from students;
+
+# 2021-11-11 10:55:41.228076
++alter table students drop column graduated_from
+
+# 2021-11-11 10:55:45.316357
++select * from students;
+
+# 2021-11-11 10:55:57.852248
++alter table students drop column graduated_university
+
+# 2021-11-11 10:56:00.540280
++select * from students;
+
+# 2021-11-11 10:56:30.540054
++describe students
+
+# 2021-11-11 11:08:41.540922
++select * from students;
+
+# 2021-11-11 11:09:58.924955
++create table students_back like students;
+
+# 2021-11-11 11:10:16.908763
++insert into students_back select * from students ;
+
+# 2021-11-11 11:10:26.820731
++select * from students_back
+
+# 2021-11-11 11:11:28.877203
++insert into students (name) values("hello")
+
+# 2021-11-11 11:11:36.989074
++insert into students (first_name) values("hello")
+
+# 2021-11-11 11:11:56.205466
++select * from students where first_name = "hello"
+
+# 2021-11-11 11:17:03.757817
++select count(*) from students;
+
+# 2021-11-11 11:17:10.165537
++select * from students;
+
+# 2021-11-11 11:17:39.005354
++select * from students where first_name = "Richard";
+
+# 2021-11-11 11:17:48.321723
++select * from students where first_name = "Richard%";
+
+# 2021-11-11 11:17:52.933475
++select * from students where first_name like "Richard%";
+
+# 2021-11-11 11:18:04.445848
++select * from students where first_name like "%Richard";
+
+# 2021-11-11 11:18:11.009658
++select * from students where first_name like "%Rich";
+
+# 2021-11-11 11:18:16.325962
++select * from students where first_name like "%Rich%";
+
+# 2021-11-11 11:18:22.189410
++select * from students where first_name like "Rich%";
+
+# 2021-11-11 11:19:20.710422
++alter table students add fulltext (first_name ,last_name)
+
+# 2021-11-11 11:19:28.621543
++describe students;
+
+# 2021-11-11 11:19:54.215248
++select * from students where match(first_name, last_name ) AGAINST ('Richard');
+
+# 2021-11-11 11:23:52.358121
++select count(*) from students;
+
+# 2021-11-11 11:31:28.078119
++select count(*) from students;
+
+# 2021-11-11 11:31:35.382916
++select * from students;
+
+# 2021-11-11 12:28:58.693152
++select * from students where match(first_name, last_name ) AGAINST ('Richard');
+
+# 2021-11-11 12:29:17.811225
++select * from students where first_name like ('Richard');
+
+# 2021-11-11 12:29:24.869090
++select * from students where match(first_name, last_name ) AGAINST ('Richard');
+
+# 2021-11-11 12:29:37.404889
++select * from students where first_name like 'Richa%';
+
+# 2021-11-11 12:34:44.821247
++select * from students where first_name like 'Richa%' or last_name like 'Richa%';
+
+# 2021-11-11 12:35:33.165827
++select from students where first_name like 'Richa%' union all select from students where last_name like 'Richa%'
+
+# 2021-11-11 12:36:47.510484
++select * from students where first_name like 'Richa%' union all select from students where last_name like 'Richa%'
+
+# 2021-11-11 12:38:58.934761
++select from students where first_name like 'Richa%' union all select from students where last_name like 'Richa%'
+
+# 2021-11-11 12:39:08.037701
++select from students where first_name like 'Richa%' union all select from students where last_name like 'R%'
+
+# 2021-11-11 12:40:40.893532
++select * from students where first_name like 'Richa%' or last_name like 'Richa%';
+
+# 2021-11-11 12:43:08.078448
++select from students where first_name like 'Richa%' union all select from students where last_name like 'R%'
+
+# 2021-11-11 12:43:13.765115
++show index from students
+
+# 2021-11-11 12:44:27.589475
++select * from students where first_name like 'Richa%' union all select * from students where last_name like 'R%'
+
+# 2021-11-11 12:44:49.013758
++select * from students where first_name like 'Richa%' or last_name like 'Richa%';
+
+# 2021-11-11 12:45:22.005909
++select * from students where first_name like 'Richa%' unique  all select * from students where last_name like 'R%'
+
+# 2021-11-11 12:45:31.054448
++select * from students where first_name like 'Richa%' unique   select * from students where last_name like 'R%'
+
+# 2021-11-11 12:45:39.073975
++select * from students where first_name like 'Richa%' union all select * from students where last_name like 'R%'
+
+# 2021-11-11 12:46:51.462949
++select * from students where first_name like 'Richa%' union   select * from students where last_name like 'R%'
+
+# 2021-11-11 12:47:02.262125
++select count(*) from students where first_name like 'Richa%' union   select * from students where last_name like 'R%'
+
+# 2021-11-11 12:47:14.965747
++select * from students where first_name like 'Richa%' union   select * from students where last_name like 'R%'
+
+# 2021-11-11 12:48:02.013543
++select count(*) from  (select * from students where first_name like 'Richa%' union   select * from students where last_name like 'R%')
+
+# 2021-11-11 12:48:26.374039
++select count(*) from (select * from students where first_name like 'Richa%' union   select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:48:39.181938
++select * from aa
+
+# 2021-11-11 12:48:53.389879
++select count(*) from (select * from students where first_name like 'Richa%' union  all  select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:49:45.078165
++select count(*) from (select * from students where first_name like 'Richa%' hello union  all  select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:50:05.719505
++select count(*) from (select * h from students where first_name like 'Richa%'  union  all  select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:50:10.605750
++select count(*) from (select * as h from students where first_name like 'Richa%'  union  all  select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:50:15.997778
++select count(*) from (select * from students where first_name like 'Richa%'  union  all  select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:50:24.733613
++select count(*) from (select * from students where first_name like 'Richa%'  union    select * from students where last_name like 'R%') aa
+
+# 2021-11-11 12:50:43.950666
++select count(*) from students;
+
+# 2021-11-11 12:50:51.063664
++select count(*) from students limit 1;
+
+# 2021-11-11 12:50:54.997873
++select * from students limit 1;
+
+# 2021-11-11 12:50:59.773795
++select * from students limit 10;
+
+# 2021-11-11 13:07:14.956379
++select count(*) from (select * from students where first_name like 'Richa%'  union    select * from students where last_name like 'R%') aa
+
+# 2021-11-11 13:07:37.486757
++select count(*) from students;
+
+# 2021-11-11 13:08:12.586780
++select count(*) from (select * from students where first_name like 'Richa%'  union    select * from students where last_name like 'R%') aa
+
+# 2021-11-11 13:08:15.414787
++select count(*) from students;
+
+# 2021-11-11 13:13:39.702835
++create table websites(id int primary key unique , name varchar(100) not null , url varchar(100) not null , alexa int , country varchar(3));
+
+# 2021-11-11 13:14:37.751037
++create table asscess_log(aid int not null primary key unique , site_id int , count int , date date);
+
+# 2021-11-11 13:15:10.046949
++insert into websites values(1,'Google','https://www.google.com',1,USA);
+
+# 2021-11-11 13:15:14.974661
++insert into websites values(1,'Google','https://www.google.com',1,'USA');
+
+# 2021-11-11 13:15:51.127371
++insert into websites values(2,'淘宝','https://www.taobao.com',13,'CN');
+
+# 2021-11-11 13:16:28.928082
++insert into websites values(3,'菜鸟教程','http://www.runoob.com',3569, 'CN');
+
+# 2021-11-11 13:17:06.415376
++insert into websites values(4,'微博','http://weibo.com',20,'CN');
+
+# 2021-11-11 13:17:42.839054
++insert into websites values(5,'Facebook','https://www.facebook.com',3,'USA');
+
+# 2021-11-11 13:18:10.295357
++insert into websites values(6,'stackoverflow','https://stackoverflow.com',0,'IND');
+
+# 2021-11-11 13:18:16.390701
++select * from websites;
+
+# 2021-11-11 13:18:45.207042
++insert into asscess_log values(1,1,45,'2016-05-10');
+
+# 2021-11-11 13:19:09.831360
++insert into asscess_log values(2,3,100,'2016-05-14');
+
+# 2021-11-11 13:19:32.968270
++insert into asscess_log values(3,1,230,'2016-05-14');
+
+# 2021-11-11 13:19:52.671310
++insert into asscess_log values(4,2,10,'2016-05-14');
+
+# 2021-11-11 13:20:09.751957
++insert into asscess_log values(5,5,205,'2016-05-14');
+
+# 2021-11-11 13:20:25.071794
++insert into asscess_log values(6,4,13,'2016-05-14');
+
+# 2021-11-11 13:20:39.519565
++insert into asscess_log values(7,3,220,'2016-05-14');
+
+# 2021-11-11 13:20:52.271611
++insert into asscess_log values(8,5,545,'2016-05-14');
+
+# 2021-11-11 13:21:07.192917
++insert into asscess_log values(9,3,201,'2016-05-17');
+
+# 2021-11-11 13:21:46.631564
++update asscess_log set date='2016-05-16' where aid=8
+
+# 2021-11-11 13:21:51.863818
++select * from asscess_log;
+
+# 2021-11-11 13:22:08.119385
++update asscess_log set date='2016-05-15' where aid=7
+
+# 2021-11-11 13:22:10.600044
++update asscess_log set date='2016-05-15' where aid=6
+
+# 2021-11-11 13:22:15.814945
++select * from asscess_log;
+
+# 2021-11-11 13:22:34.023198
++update asscess_log set date='2016-05-13' where aid=2
+
+# 2021-11-11 13:22:35.743038
++select * from asscess_log;
+
+# 2021-11-11 13:23:02.735532
++show tables;
+
+# 2021-11-11 13:24:38.576154
++select websites.name, access_log.count ,access_log.date from websites left join access_log on websites.id = access_log.site_id order by access_log.country desc
+
+# 2021-11-11 13:25:06.831836
++select websites.name, access_log.count ,access_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.country desc
+
+# 2021-11-11 13:25:20.407445
++select websites.name, access_log.country ,access_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.country desc
+
+# 2021-11-11 13:25:40.943802
++select websites.name, asscess_log.country ,access_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc
+
+# 2021-11-11 13:25:49.399472
++select websites.name, asscess_log.`count` ,access_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc
+
+# 2021-11-11 13:26:02.192255
++select websites.name, asscess_log.`count` ,asscess_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc
+
+# 2021-11-11 13:26:25.855788
++select websites.name, asscess_log.`count` ,asscess_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc union on websites.name
+
+# 2021-11-11 13:26:28.423544
++select websites.name, asscess_log.`count` ,asscess_log.date from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc 
+
+# 2021-11-11 13:26:40.871812
++select websites.name, asscess_log.`count`  from websites left join asscess_log on websites.id = asscess_log.site_id order by asscess_log.`count` desc 
+
+# 2021-11-11 13:27:09.807568
++create table access like asscess
+
+# 2021-11-11 13:27:13.663259
++show tables;
+
+# 2021-11-11 13:27:21.623863
++create table access like asscess_log
+
+# 2021-11-11 13:27:33.775389
++insert into access select * from asscess_log
+
+# 2021-11-11 13:27:39.943288
++drop table asscess_log
+
+# 2021-11-11 13:28:14.055862
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id order by access.`count` desc  
+
+# 2021-11-11 13:28:32.391563
++select websites.name, access.`count`  from websites left join access on websites.id = access.site_id order by access.`count` desc  
+
+# 2021-11-11 13:28:44.855691
++create table access_log like access
+
+# 2021-11-11 13:28:57.992018
++insert into access_log select * from access
+
+# 2021-11-11 13:29:12.959712
++select * from asscess_log;
+
+# 2021-11-11 13:29:15.439352
++select * from access_log;
+
+# 2021-11-11 13:29:22.343632
++drop table `access`
+
+# 2021-11-11 13:29:51.655634
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id order by access_log.`count` desc  
+
+# 2021-11-11 14:25:23.338326
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id order by access_log.`count` desc  group by name
+
+# 2021-11-11 14:25:29.338657
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id order by access_log.`count`  group by name
+
+# 2021-11-11 14:25:38.698151
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id order by access_log.`count` desc  group by websites.name
+
+# 2021-11-11 14:26:25.418986
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id group by websites.name order by access_log.`count` desc
+
+# 2021-11-11 14:27:05.834869
++select websites.name, sum(access_log.`count`)  from websites left join access_log on websites.id = access_log.site_id group by websites.name order by access_log.`count` desc
+
+# 2021-11-11 14:29:57.955208
++select * from access_log;
+
+# 2021-11-11 14:30:06.138503
++select * from websites;
+
+# 2021-11-11 14:30:13.186101
++select * from websites\G
+
+# 2021-11-11 14:30:15.742468
++select * from websites
+
+# 2021-11-11 14:30:20.162377
++select * from access_log;
+
+# 2021-11-11 14:30:23.763593
++select * from websites;
+
+# 2021-11-11 14:30:34.618965
++select * from access_log;
+
+# 2021-11-11 14:30:42.307532
++select * from websites;
+
+# 2021-11-11 14:30:51.394914
++select * from websites limit 10;
+
+# 2021-11-11 14:30:57.307824
++show select * from websites limit 10;
+
+# 2021-11-11 14:31:02.642621
++describe select * from websites limit 10;
+
+# 2021-11-10 17:11:08.514326
++show tables;
+
+# 2021-11-10 17:21:47.092379
++show databases;
+
+# 2021-11-10 17:22:04.786398
++use test;
+
+# 2021-11-10 17:22:07.378305
++show tables;
+
+# 2021-11-10 17:22:13.461417
++clear
+
+# 2021-11-10 17:22:36.970672
++show databases;
+
+# 2021-11-10 17:23:00.034892
++create database alterationdet
+
+# 2021-11-10 17:23:29.796077
++use alterationdet;
+
+# 2021-11-10 17:23:33.195100
++show tables
+
+# 2021-11-10 17:23:35.546346
++show tables;
+
+# 2021-11-10 17:23:47.058516
++show databases;
+
+# 2021-11-10 17:25:39.868295
++use alterationdet;
+
+# 2021-11-10 17:25:43.146589
++show tables;
+
+# 2021-11-10 17:25:49.131076
++select * from students limit 10;
+
+# 2021-11-10 17:26:17.100421
++use alterationdet;
+
+# 2021-11-10 17:26:24.858776
++show tables;
+
+# 2021-11-10 17:26:29.635088
++select * from access_log;
+
+# 2021-11-10 17:26:32.650494
++select * from websites;
+
+# 2021-11-10 17:26:38.106940
++select * from students;
+
+# 2021-11-10 17:27:42.611456
++select websites.name, sum(access_log.`count`)  from websites left join access_log on websites.id = access_log.site_id group by websites.name order by access_log.`count` desc
+
+# 2021-11-10 17:28:02.571925
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id group by websites.name order by access_log.`count` desc
+
+# 2021-11-10 17:28:20.147223
++select websites.name, access_log.`count`  from websites left join access_log on websites.id = access_log.site_id  order by access_log.`count` desc
