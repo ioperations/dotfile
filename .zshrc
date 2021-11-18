@@ -94,6 +94,7 @@ alias vi='nvim'
 alias ra='ranger'
 alias vim='nvim'
 alias v='nvim'
+alias vf='nvim `fzf`'
 alias e='emacs -nw'
 alias emacs='emacs -nw'
 alias c='ccat'
@@ -106,6 +107,7 @@ alias gd='git diff'
 alias gp='git push'
 alias gl='git branch -l'
 alias gt='git tag -l'
+alias clang++='clang++ -fsanitize=address -std=c++17 '
 
 export TI_USE_UNIFIED_MEMORY=0
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
@@ -174,3 +176,14 @@ export PATH=$PATH:$ANDROID_NDK_HOME
 
 [ -d ~/.ghcup/bin ] && export PATH=$PATH:~/.ghcup/bin/
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.z.sh ] && source ~/.z.sh
+[ -d ~/bin/depot_tools ] && export PATH=$HOME/bin/depot_tools:$PATH
+[ -f ~/zclang/bin/clang ] && export PATH=$HOME/zclang/bin:$PATH
+
+alias luamake=/home/tablinux/Github/luamake/luamake
+load_private_clang(){
+    export PATH="$HOME/zclang/bin:$PATH"
+}
+
+source /home/tablinux/.config/broot/launcher/bash/br
+export PATH="/home/tablinux/build/git-fuzzy/bin:$PATH"
