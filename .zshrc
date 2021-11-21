@@ -82,9 +82,28 @@ fi
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    osx
+    macos
     sudo
+    ag
+    aliases
+    archlinux
+    aws
+    bazel
+    command-not-found
+    docker
+    docker-compose
+    docker-machine
+    extract
+    git-flow
+    kubectl
+    kubectx
+    ripgrep
+    rsync
+    rust
+    rustup
+    timer
     tmux
+    zoxide
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -185,5 +204,4 @@ load_private_clang(){
     export PATH="$HOME/zclang/bin:$PATH"
 }
 
-source /home/tablinux/.config/broot/launcher/bash/br
 export PATH="/home/tablinux/build/git-fuzzy/bin:$PATH"
