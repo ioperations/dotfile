@@ -19,7 +19,7 @@
 # new window retains current path, possible values are:
 #   - true
 #   - false (default)
-tmux_conf_new_window_retain_current_path=false
+tmux_conf_new_window_retain_current_path=true
 #   - true (default)
 #   - false
 tmux_conf_new_pane_retain_current_path=true
@@ -84,7 +84,7 @@ tmux_conf_theme_mode_bg='#ffff00'                       # yellow
 tmux_conf_theme_mode_attr='bold'
 
 # status line style
-tmux_conf_theme_status_fg='#282828'                     # light gray
+tmux_conf_theme_status_fg='#ffffff'                     # light gray
 tmux_conf_theme_status_bg='#3d3d3d'                     # dark gray
 tmux_conf_theme_status_attr='none'
 
@@ -106,9 +106,9 @@ tmux_conf_theme_terminal_title='#h #S ● #I #W'
 #     - #{hostname_ssh}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_window_status_fg='#000021'              # light gray
-tmux_conf_theme_window_status_bg='#3d3d3d'              # dark gray
-tmux_conf_theme_window_status_attr='none'
+tmux_conf_theme_window_status_fg='#ffffff'              # light gray
+tmux_conf_theme_window_status_bg='#8400ff'              # dark gray
+tmux_conf_theme_window_status_attr='bold'
 tmux_conf_theme_window_status_format='#I #W'
 #tmux_conf_theme_window_status_format='#{circled_window_index} #W'
 #tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
@@ -121,16 +121,17 @@ tmux_conf_theme_window_status_format='#I #W'
 #     - #{hostname_ssh}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_window_status_current_fg='#ffffff'      # black
-tmux_conf_theme_window_status_current_bg='#3d3d3d'      # light blue
-tmux_conf_theme_window_status_current_attr='bold'
+tmux_conf_theme_window_status_current_fg='#b8860b'      # black
+tmux_conf_theme_window_status_current_bg='#8400ef'      # light blue
+#tmux_conf_theme_window_status_current_bg='#ededed'      # light blue
+tmux_conf_theme_window_status_current_attr='none'
 tmux_conf_theme_window_status_current_format='#I #W'
 # tmux_conf_theme_window_status_current_format='#{circled_window_index} #W'
 # tmux_conf_theme_window_status_current_format='#I #W#{?window_zoomed_flag,🔍,}'
 
 # window activity status style
-tmux_conf_theme_window_status_activity_fg='#000000'
-tmux_conf_theme_window_status_activity_bg='#3d3d3d'
+tmux_conf_theme_window_status_activity_fg='#ffffff'
+tmux_conf_theme_window_status_activity_bg='#8f00ef'
 tmux_conf_theme_window_status_activity_attr='underscore'
 
 # window bell status style
@@ -139,9 +140,9 @@ tmux_conf_theme_window_status_bell_bg='default'
 tmux_conf_theme_window_status_bell_attr='blink,bold'
 
 # window last status style
-tmux_conf_theme_window_status_last_fg='#000021'         # light blue
-tmux_conf_theme_window_status_last_bg='default'
-tmux_conf_theme_window_status_last_attr='none'
+tmux_conf_theme_window_status_last_fg='#ffffff'         # light blue
+tmux_conf_theme_window_status_last_bg='#8400ef'
+tmux_conf_theme_window_status_last_attr='bold'
 
 # status left/right sections separators
 tmux_conf_theme_left_separator_main=''
@@ -180,11 +181,11 @@ tmux_conf_theme_right_separator_sub='|'
 # tmux_conf_theme_status_left=' | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
 tmux_conf_theme_status_left=
 # tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} '
-tmux_conf_theme_status_right='| ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
+tmux_conf_theme_status_right='| ♥ #{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
 
 # status left style
-tmux_conf_theme_status_left_fg='#01e4e4,#e4e4e4,#e4e4e4'  # black, white , white
-tmux_conf_theme_status_left_bg='#282828,#282828,#00afff'  # yellow, pink, white blue
+tmux_conf_theme_status_left_fg='#e4e4e4,#e4e4e4,#e4e4e4'  # black, white , white
+tmux_conf_theme_status_left_bg='#282828,#282828,#282828'  # yellow, pink, white blue
 tmux_conf_theme_status_left_attr='bold,none,none'
 
 # status right style
@@ -262,7 +263,7 @@ tmux_conf_battery_status_discharging='🔋 ' # U+1F50B
 # clock style (when you hit <prefix> + t)
 # you may want to use %I:%M %p in place of %R in tmux_conf_theme_status_right
 tmux_conf_theme_clock_colour='#00afff'  # light blue
-tmux_conf_theme_clock_style='24'
+tmux_conf_theme_clock_style='38'
 
 
 # -- clipboard -----------------------------------------------------------------
@@ -272,7 +273,7 @@ tmux_conf_theme_clock_style='24'
 #   - false (default)
 # on macOS, this requires installing reattach-to-user-namespace, see README.md
 # on Linux, this requires xsel or xclip
-tmux_conf_copy_to_os_clipboard=false
+tmux_conf_copy_to_os_clipboard=true
 
 
 # -- user customizations -------------------------------------------------------
