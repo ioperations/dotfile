@@ -86,7 +86,7 @@ tmux_conf_theme_mode_attr='bold'
 # status line style
 tmux_conf_theme_status_fg='#ffffff'                     # light gray
 tmux_conf_theme_status_bg='#3d3d3d'                     # dark gray
-tmux_conf_theme_status_attr='none'
+tmux_conf_theme_status_attr='bold'
 
 # terminal title
 #   - built-in variables are:
@@ -109,7 +109,7 @@ tmux_conf_theme_terminal_title='#h #S ● #I #W'
 tmux_conf_theme_window_status_fg='#ffffff'              # light gray
 tmux_conf_theme_window_status_bg='#8400ff'              # dark gray
 tmux_conf_theme_window_status_attr='bold'
-tmux_conf_theme_window_status_format='#h #I #W'
+tmux_conf_theme_window_status_format='     #I #W     '
 #tmux_conf_theme_window_status_format='#{circled_window_index} #W'
 #tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
 
@@ -124,15 +124,15 @@ tmux_conf_theme_window_status_format='#h #I #W'
 tmux_conf_theme_window_status_current_fg='#b8860b'      # black
 tmux_conf_theme_window_status_current_bg='#8400ef'      # light blue
 #tmux_conf_theme_window_status_current_bg='#ededed'      # light blue
-tmux_conf_theme_window_status_current_attr='underscore'
-tmux_conf_theme_window_status_current_format='#h #I #W'
+tmux_conf_theme_window_status_current_attr='bold,underscore'
+tmux_conf_theme_window_status_current_format='    #I #W    '
 # tmux_conf_theme_window_status_current_format='#{circled_window_index} #W'
 # tmux_conf_theme_window_status_current_format='#I #W#{?window_zoomed_flag,🔍,}'
 
 # window activity status style
 tmux_conf_theme_window_status_activity_fg='#ffffff'
-tmux_conf_theme_window_status_activity_bg='#8f00ef'
-tmux_conf_theme_window_status_activity_attr='none'
+tmux_conf_theme_window_status_activity_bg='#8400ef'
+tmux_conf_theme_window_status_activity_attr='bold'
 
 # window bell status style
 tmux_conf_theme_window_status_bell_fg='#ffff00'         # yellow
