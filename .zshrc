@@ -100,7 +100,6 @@ plugins=(
     ripgrep
     rsync
     rust
-    rustup
     timer
     tmux
     zoxide
