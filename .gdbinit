@@ -1,11 +1,12 @@
-source /usr/share/pwndbg/gdbinit.py
-
+set startup-with-shell off
 python
 import sys
-sys.path.insert(0, '/usr/share/gcc-11.1.0/python/')
+sys.path.insert(0, '/usr/share/gcc-11.2.0/python/')
+sys.path.insert(0, '/usr/share/gcc-11.2.0/python/libstdcxx/v6')
 from libstdcxx.v6.printers import register_libstdcxx_printers
 register_libstdcxx_printers (None)
 end
+
 
 python
 
@@ -2299,20 +2300,28 @@ end
 
 # Better GDB defaults ----------------------------------------------------------
 
-set history save
+ #
 set verbose off
 set print pretty on
 set print array off
 set print array-indexes on
 set python print-stack full
 
-# Start ------------------------------------------------------------------------
+set detach-on-fork off
+set follow-fork-mode child
+set history save on
+set history size unlimited
+set history remove-duplicates unlimited
+set history filename ~/.gdb_eternal_history
 
+# 
+# Start ------------------------------------------------------------------------
 python Dashboard.start()
 
 # File variables ---------------------------------------------------------------
-
 # vim: filetype=python
 # Local Variables:
 # mode: python
 # End:
+
+#source /home/tablinux/build/pwndbg/gdbinit.py
