@@ -87,7 +87,6 @@ plugins=(
     ag
     aliases
     archlinux
-    aws
     bazel
     command-not-found
     docker
@@ -126,6 +125,12 @@ alias gp='git push'
 alias gl='git branch -l'
 alias gt='git tag -l'
 alias clang++='clang++ -fsanitize=address -std=c++17 '
+case `uname -s` in
+    "Darwin")
+    alias tmux="TERM=screen-256color-bce tmux"
+	;;
+esac
+#
 
 export TI_USE_UNIFIED_MEMORY=0
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
@@ -204,3 +209,4 @@ load_private_clang(){
 }
 
 export PATH="/home/tablinux/build/git-fuzzy/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:$PATH"
