@@ -86,7 +86,7 @@ plugins=(
     sudo
     ag
     aliases
-    archlinux
+    #archlinux
     bazel
     command-not-found
     docker
@@ -128,6 +128,7 @@ alias clang++='clang++ -fsanitize=address -std=c++17 '
 case `uname -s` in
     "Darwin")
     alias tmux="TERM=screen-256color-bce tmux"
+    export TERM=xterm-256color
 	;;
 esac
 #
