@@ -2318,6 +2318,9 @@ set history filename ~/.gdb_eternal_history
 # Start ------------------------------------------------------------------------
 python Dashboard.start()
 
+
+### 将所有进来的信号不要停止程序，有些依靠single通信的程序需要这样设置
+handle all nostop
 # File variables ---------------------------------------------------------------
 # vim: filetype=python
 # Local Variables:
@@ -2325,3 +2328,4 @@ python Dashboard.start()
 # End:
 
 #source /home/tablinux/build/pwndbg/gdbinit.py
+source /usr/share/pwndbg/gdbinit.py
