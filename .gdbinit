@@ -1,8 +1,8 @@
 set startup-with-shell off
 python
 import sys
-sys.path.insert(0, '/usr/share/gcc-11.2.0/python/')
-sys.path.insert(0, '/usr/share/gcc-11.2.0/python/libstdcxx/v6')
+sys.path.insert(0, '/usr/local/Cellar/gcc/11.2.0_3/share/gcc-11/python/')
+sys.path.insert(0, '/usr/local/Cellar/gcc/11.2.0_3/share/gcc-11/python/libstdcxx/v6')
 from libstdcxx.v6.printers import register_libstdcxx_printers
 register_libstdcxx_printers (None)
 end
