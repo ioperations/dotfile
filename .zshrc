@@ -2,8 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
 export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -13,14 +15,40 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=mikeh
 # ZSH_THEME_RANDOM_CANDIDATES=( "" "" )
 #export LC_ALL=C
+export KEYTIMEOUT=1 
+plugins=(
+    macos
+    sudo
+    ag
+    aliases
+    archlinux
+    aws
+    bazel
+    command-not-found
+    docker
+    docker-compose
+    docker-machine
+    extract
+    git-flow
+    kubectl
+    kubectx
+    ripgrep
+    rsync
+    rust
+    timer
+    zoxide
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+
 
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 # map caps to escape
-if command -v setxkbmap >> /dev/null 2>&1 ; then
-    setxkbmap -option caps:escape
-fi
+#if command -v setxkbmap >> /dev/null 2>&1 ; then
+    #setxkbmap -option caps:escape
+#fi
 
 
 # Set list of themes to pick from when loading at random
@@ -81,36 +109,11 @@ fi
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    macos
-    sudo
-    ag
-    aliases
-    #archlinux
-    bazel
-    command-not-found
-    docker
-    docker-compose
-    docker-machine
-    extract
-    git-flow
-    kubectl
-    kubectx
-    ripgrep
-    rsync
-    rust
-    timer
-    tmux
-    zoxide
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-)
-
 export EDITOR=nvim
-alias vi='nvim'
 alias ra='ranger'
-alias vim='nvim'
 alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
 alias vf='nvim `fzf`'
 alias e='emacs -nw'
 alias emacs='emacs -nw'
@@ -125,13 +128,6 @@ alias gp='git push'
 alias gl='git branch -l'
 alias gt='git tag -l'
 alias clang++='clang++ -fsanitize=address -std=c++17 '
-case `uname -s` in
-    "Darwin")
-    alias tmux="TERM=screen-256color-bce tmux"
-    export TERM=xterm-256color
-	;;
-esac
-#
 
 export TI_USE_UNIFIED_MEMORY=0
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
@@ -173,11 +169,11 @@ fi
 #
 case `uname -s` in
     "Linux")
-	export PATH="$HOME/.local/bin/:$HOME/bin:$HOME/go/bin/:$PATH:/opt/swift/usr/bin/"
-	export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-	export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
-	export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
-	;;
+    export PATH="$HOME/.local/bin/:$HOME/bin:$HOME/go/bin/:$PATH:/opt/swift/usr/bin/"
+    export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+    export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+    export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
+    ;;
 esac
 # numlockx off
 
@@ -188,9 +184,9 @@ if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
-	. "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    . "/usr/local/anaconda3/etc/profile.d/conda.sh"
     else
-	export PATH="/usr/local/anaconda3/bin:$PATH"
+    export PATH="/usr/local/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -210,4 +206,29 @@ load_private_clang(){
 }
 
 export PATH="/home/tablinux/build/git-fuzzy/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+
+
+# 
+# PATH="/home/tablinux/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/home/tablinux/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/home/tablinux/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/home/tablinux/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/home/tablinux/perl5"; export PERL_MM_OPT;
+
+PATH="/home/tablinux/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/tablinux/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/tablinux/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/tablinux/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/tablinux/perl5"; export PERL_MM_OPT;
+source ~/bin/z.lua/z.lua.plugin.zsh
+
