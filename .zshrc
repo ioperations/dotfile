@@ -362,7 +362,7 @@ perfrecord ()
 [ -f $HOME/.zoxide.sh ] && source $HOME/.zoxide.sh
 # opam configuration
 [[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-eval "$(opam env)"
+[[ command -v opam ]] && eval "$(opam env)"
 #
 # do not allow f# telementory
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
