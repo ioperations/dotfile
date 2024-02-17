@@ -383,7 +383,8 @@ export PATH=~/.config/emacs/bin:$PATH
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
-export PS1='%{[1m[34m%}#%{[00m%} %(#,%{[43m%}%{[30m%}%n%{[00m%},%{[36m%}%n) %{[00m%}@ %{[32m%}%m %{[00m%}in %{[1m[33m%}%~%{[0;34m%}%B <- $(echo $(git_prompt_info) | sed "s/^$/ /" )$(svn_prompt_info) ->%{[0m%}%b  [%*] %(?,,C:%{[31m%}%?%{[00m%})
+export PS1='%{[1m[34m%}#%{[00m%} %(#,%{[43m%}%{[30m%}%n%{[00m%},%{[36m%}%n) %{[00m%}@ %{[32m%}%m %{[00m%}in %{[1m[33m%}%~%{[0;34m%}%B <- ($vcs_info_msg_0_) ->%{[0m%}%b  [%*] %(?,,C:%{[31m%}%?%{[00m%})
+%{[1m[31m%}$ %{[00m%}'
 
 export PATH="$PATH:$HOME/.dotnet/tools"
 
